@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta   charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        Counter
+    </title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <div class="center">
+    <h1 class="count">Counter</h1>
+    <p class="val" id="value">0</p>
+    <div class="but">
+    <button id="dec" value="submit" onclick="dec()">Decrement</button>
+    <button id="reset" value="submit" onclick="res()">Reset</button>
+    <button id="inc" value="submit" onclick="inc()">Increment</button>
+</div></div>
+<script>
+    var c=0;
+function dec(){
+    var b1=document.getElementById("dec").value;
+   
+    
+    if(b1){
+        c--;
+    }
+    document.getElementById("value").innerHTML=c;
+}
+function res(){
+    var res=document.getElementById("reset").value;
+    res=location.reload();
+}
+function inc(){
+    var b2=document.getElementById("inc").value;
+   
+    if(b2){
+        c++;
+    }
+    document.getElementById("value").innerHTML=c;
+}
+</script>
+</body>
+</html>
